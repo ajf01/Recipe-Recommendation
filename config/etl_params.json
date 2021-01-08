@@ -1,0 +1,4 @@
+{
+    "training_data": "data/training_set",
+    "output_location": "data/NF_DATA"
+}

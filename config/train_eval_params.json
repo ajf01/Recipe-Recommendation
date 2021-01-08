@@ -1,0 +1,23 @@
+{
+    "train_data":  "data/NF_DATA/N3M_TRAIN",
+    "valid_data":  "data/NF_DATA/N3M_VALID",
+    "test_data":  "data/NF_DATA/N3M_TEST",
+    "prediction_location": "data/final/3m_data/preds.txt",
+    "model_output_dir": "data/final/3m_data",
+    "model_save": "data/final/3m_data/model.epoch_9",
+    "CONSTRAINED": false,
+    "SKIP_LAST_LAYER_NL": false,
+    "NOISE_PROB": 0.0,
+    "SUMMARY_FREQUENCY": 100,
+    "SAVE_EVERY": 3,
+    "GPUS": "0",
+    "ACTIVATION": "selu",
+    "OPTIMIZER": "momentum",
+    "HIDDEN": "512,512,1024",
+    "BATCH_SIZE": 128,
+    "DROPOUT": 0.8,
+    "LR": 0.005,
+    "WD": 0,
+    "EPOCHS": 10,
+    "AUG_STEP": 1
+}
