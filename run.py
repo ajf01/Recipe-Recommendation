@@ -4,8 +4,6 @@ from os import listdir, path, makedirs
 import sys
 import json
 from src.data import etl
-from src.models import train, evaluate, rmse
-from src.baselines import surprise, linReg, meanMovie
 
 
 def main(targets):
