@@ -11,13 +11,13 @@ def save_data_to_file(data, filename):
                 out.write("{}\t{}\t{}\n".format(userId, record[0], record[1]))
 
 def main(configs):
-    folder = configs['original_data']
+    folder = configs['original_loc']
     out_folder = configs['output_location']
     # create necessary folders:
-    makedirs(out_folder, exist_ok=True)
+    makedirs(folder, exist_ok=True)
     
     kaggle.api.authenticate()
-    kaggle.api.dataset_download_files('Food.com Recipes and Interactions', path=out_folder, unzip=True)
+    kaggle.api.dataset_download_files('Food.com Recipes and Interactions', path=folder, unzip=True)
 
 if __name__ == "__main__":
     main(sys.argv)
