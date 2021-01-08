@@ -17,7 +17,7 @@ def main(configs):
     makedirs(folder, exist_ok=True)
     
     kaggle.api.authenticate()
-    kaggle.api.dataset_download_files('Food.com Recipes and Interactions', path=folder, unzip=True)
-
+    kaggle.api.dataset_download_files('shuyangli94/food-com-recipes-and-user-interactions', path=folder, unzip=True)
+    
 if __name__ == "__main__":
     main(sys.argv)
