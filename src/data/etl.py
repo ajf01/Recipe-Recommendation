@@ -27,7 +27,7 @@ def main(configs):
 
     raw_r = raw_r[raw_r['minutes'] < 300000]
     combined = pd.merge(raw_r,raw_i,how='inner',left_on='id',right_on='recipe_id')
-    combined.to_csv(out_folder+'/combined.csv',index=False)
+    combined.to_csv(out_folder+'/combined.csv,index=False)
 
 if __name__ == "__main__":
     main(sys.argv)
