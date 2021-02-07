@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import pickle
+from collections import defaultdict
 from sklearn.linear_model import LinearRegression
 
 def RMSE(predictions, labels):
