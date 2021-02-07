@@ -1,4 +1,6 @@
 {
     "original_loc": "data/original_set",
-    "output_location": "data/modified_set"
+    "output_location": "data/modified_set",
+    "recipes": "data/original_set/RAW_recipes.csv",
+    "inter": "data/original_set/RAW_interactions.csv"
 }

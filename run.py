@@ -4,6 +4,7 @@ from os import listdir, path, makedirs
 import sys
 import json
 from src.data import etl
+from src.baselines import mostPop
 
 
 def main(targets):
@@ -15,14 +16,13 @@ def main(targets):
             configs = json.load(file)
 
         etl.main(configs)
-        train.main(configs)
-        evaluate.main(configs)
-        rmse.main(configs)
+        #evaluate.main(configs)
+        #rmse.main(configs)
         
-        print("####################")
-        meanMovie.main(configs)
-        linReg.main(configs)
-        surprise.main(configs) 
+        #print("####################")
+        #meanMovie.main(configs)
+        mostPop.main(configs)
+        #surprise.main(configs) 
         print("####################")
 
     if targets == 'data' or targets == 'all':
