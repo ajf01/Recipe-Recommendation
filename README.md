@@ -17,7 +17,7 @@ The following files were created by us in order to create and run our baselines 
 
 > requirements.txt: Contains the amount of processing resources recommended to run the files within a few hours each, and the packages needed and the versions that were used to run all the processes.
 
-> Simple Preliminary EDA.ipynb: Inside the notebook directory. Notebook containing the exploratory data analyses that was taken on the data to further understand and gain insight on the data we were using.
+> Preliminary EDA.ipynb: Inside the notebook directory. Notebook containing the exploratory data analyses that was taken on the data to further understand and gain insight on the data we were using.
 
 ##  Directories
 
