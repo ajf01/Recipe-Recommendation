@@ -1,7 +1,7 @@
 # Recipe-Recommendation
 
 ## Introduction
-This repository contains the code and models needed to create a recommender system for recipe recommendations. Included in the repository are a few simple baselines as well as the final model utilized by our recommender system for recipe recommendation. The data for this project was pulled from Kaggle (https://www.kaggle.com/shuyangli94/food-com-recipes-and-user-interactions).
+This repository contains the code and models needed to create a recommender system for recipe recommendations. Included in the repository are a few simple baselines as well as the final model utilized by our recommender system for recipe recommendation. The data for this project was pulled from Kaggle (https://www.kaggle.com/shuyangli94/food-com-recipes-and-user-interactions) and (https://www.kaggle.com/kaggle/recipe-ingredients-dataset/home).
 
 ##  Files
 
@@ -14,6 +14,8 @@ The following files were created by us in order to create and run our baselines 
 > run.py: Passes in the location of the data folder. Runs etl on the Kaggle data and stores the data in the data output folder. Runs baselines and model on the dataset. Evaluates models to see how well the baselines did in comparison to the final model.
 
 > mostPop.py: Baseline file that uses a top popular model to determine what users would rate certain recipes.
+
+> randomFor.py: Baseline file that uses a random forest model to determine what cuisine type each recipe would fall under.
 
 > requirements.txt: Contains the amount of processing resources recommended to run the files within a few hours each, and the packages needed and the versions that were used to run all the processes.
 
