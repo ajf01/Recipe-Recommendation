@@ -17,6 +17,8 @@ The following files were created by us in order to create and run our baselines 
 
 > randomFor.py: Baseline file that uses a random forest model to determine what cuisine type each recipe would fall under.
 
+> conBased.py: Baseline file that uses a content based model with cosine similarity to determine what recipe to recommend based on what ingredients are listed by the user.
+
 > requirements.txt: Contains the amount of processing resources recommended to run the files within a few hours each, and the packages needed and the versions that were used to run all the processes.
 
 > Preliminary EDA.ipynb: Inside the notebook directory. Notebook containing the exploratory data analyses that was taken on the data to further understand and gain insight on the data we were using.
