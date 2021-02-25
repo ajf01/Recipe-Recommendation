@@ -4,7 +4,7 @@ from os import listdir, path, makedirs
 import sys
 import json
 from src.data import etl
-from src.baselines import mostPop
+from src.baselines import mostPop, randomFor, conBased
 
 
 def main(targets):
@@ -22,6 +22,8 @@ def main(targets):
         #print("####################")
         #meanMovie.main(configs)
         mostPop.main(configs)
+        randomFor.main(configs)
+        conBased.main(configs)
         #surprise.main(configs) 
         print("####################")
 

@@ -3,6 +3,10 @@
     "output_location": "data/modified_set",
     "recipes": "data/original_set/RAW_recipes.csv",
     "inter": "data/original_set/RAW_interactions.csv",
+    "train": "data/original_set/train.json",
+    "test": "data/original_set/test.json",
+    "final": "data/modified_set/final_data.csv",
     "combined": "data/modified_set/combined.csv",
-    "testSet": "testData/listfile.data"
+    "testSet": "testData/listfile.data",
+    "sampleInput": "[['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]"
 }
