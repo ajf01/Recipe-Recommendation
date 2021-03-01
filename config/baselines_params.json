@@ -1,7 +1,0 @@
-{
-    "train_data":  "data/NF_DATA/N3M_TRAIN/n3m.train.txt",
-    "test_data":  "data/NF_DATA/N3M_TEST/n3m.test.txt",
-    "train_file": "n3m.train.txt",
-    "test_file": "n3m.test.txt",
-    "EPOCHS": 20
-}

@@ -16,15 +16,12 @@ def main(targets):
             configs = json.load(file)
 
         etl.main(configs)
-        #evaluate.main(configs)
         #rmse.main(configs)
         
-        #print("####################")
-        #meanMovie.main(configs)
+        print("####################")
         mostPop.main(configs)
         randomFor.main(configs)
         conBased.main(configs)
-        #surprise.main(configs) 
         print("####################")
 
     if targets == 'data' or targets == 'all':
@@ -34,37 +31,19 @@ def main(targets):
             
         etl.main(configs)
         
-    if targets == 'train' or targets == 'all':
-        filepath = 'config/train_eval_params.json'
-        with open(filepath) as file:
-            configs = json.load(file)
+    #if targets == 'train' or targets == 'all':
+    #    filepath = 'config/train_eval_params.json'
+    #    with open(filepath) as file:
+    #        configs = json.load(file)
         
-        train.main(configs)
-            
-    if targets == 'eval' or targets == 'all':
-        filepath = 'config/train_eval_params.json'
-        with open(filepath) as file:
-            configs = json.load(file)
-            
-        evaluate.main(configs)
+    #    train.main(configs)
         
-    if targets == 'rmse' or targets == 'all':
-        filepath = 'config/rmse_params.json'
-        with open(filepath) as file:
-            configs = json.load(file)        
+    #if targets == 'rmse' or targets == 'all':
+    #    filepath = 'config/rmse_params.json'
+    #    with open(filepath) as file:
+    #        configs = json.load(file)        
         
-        rmse.main(configs)
-        
-    if targets == 'baselines' or targets == 'all':
-        filepath = 'config/baselines_params.json'
-        with open(filepath) as file:
-            configs = json.load(file)        
-        
-        print("####################")
-        meanMovie.main(configs)
-        linReg.main(configs)
-        surprise.main(configs) 
-        print("####################")
+    #    rmse.main(configs)
 
     return None
 
