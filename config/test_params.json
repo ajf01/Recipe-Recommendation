@@ -9,5 +9,5 @@
     "combined": "data/modified_set/combined.csv",
     "testSet": "testData/listfile.data",
     "size": 10,
-    "sampleInput": [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
+    "sampleInput": "[['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]"
 }
