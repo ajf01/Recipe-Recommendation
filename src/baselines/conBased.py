@@ -1,13 +1,14 @@
 import numpy as np
 import pandas as pd
 import os
+import pprint
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def main(configs):
     recipes = pd.read_csv(configs['final'])
     recipes['calories'] =  [eval(x)[0] for x in recipes['nutrition']]
-    recipes = recipes[['name','minutes','ingredients','n_ingredients','calories','mean_rating','cuisine']][:configs['size']]
+    recipes = recipes[eval(configs['conRecCol'])][:configs['size']]
     
     test = recipes['ingredients'].apply(lambda x: eval(x))
     
@@ -25,7 +26,7 @@ def main(configs):
         sims.append(sim)
 
     recipes['sim'] = [x[0][0] for x in sims]
-    print(recipes.set_index('name')[:5])
+    pprint.pprint(recipes.set_index('name')[:5])
     return 
     
 if __name__ == '__main__':

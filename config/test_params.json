@@ -9,5 +9,6 @@
     "combined": "data/modified_set/combined.csv",
     "testSet": "testData/listfile.data",
     "size": 10,
+    "conRecCol": "['name','minutes','ingredients','n_ingredients','calories','mean_rating','cuisine']",
     "sampleInput": "[['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]"
 }
