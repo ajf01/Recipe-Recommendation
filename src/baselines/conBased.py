@@ -25,7 +25,8 @@ def main(configs):
         sims.append(sim)
 
     recipes['sim'] = [x[0][0] for x in sims]
-    return recipes.set_index('name')[:5]
+    print(recipes.set_index('name')[:5])
+    return 
     
 if __name__ == '__main__':
     main(sys.argv)
