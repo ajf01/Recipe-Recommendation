@@ -5,7 +5,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def main(configs):
-    recipes = configs['final']
+    recipes = pd.read_csv(configs['final'])
     recipes['calories'] =  [eval(x)[0] for x in recipes['nutrition']]
     recipes = recipes[['name','minutes','ingredients','n_ingredients','calories','mean_rating','cuisine']][:configs['size']]
     
