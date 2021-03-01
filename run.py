@@ -19,8 +19,8 @@ def main(targets):
         #rmse.main(configs)
         
         print("####################")
-        mostPop.main(configs)
-        randomFor.main(configs)
+        #mostPop.main(configs)
+        #randomFor.main(configs)
         conBased.main(configs)
         print("####################")
 

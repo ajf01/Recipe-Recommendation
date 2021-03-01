@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 def main(configs):
     recipes = configs['final'][configs['size']]
-    recipes['calories'] =  [eval(x)[0] for x in recipes['nutrition']]
+    recipes['calories'] =  [x[0] for x in recipes['nutrition']]
     recipes = recipes[['name','minutes','ingredients','n_ingredients','calories','mean_rating','cuisine']]
     
     test = recipes['ingredients'].apply(lambda x: eval(x))
