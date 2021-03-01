@@ -5,7 +5,7 @@ from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 def main(configs):
-    recipes = configs['final']
+    recipes = configs['final'][configs['size']]
     recipes['calories'] =  [eval(x)[0] for x in recipes['nutrition']]
     recipes = recipes[['name','minutes','ingredients','n_ingredients','calories','mean_rating','cuisine']]
     
@@ -14,7 +14,7 @@ def main(configs):
     mlb = MultiLabelBinarizer()
     mlb.fit(test)
     
-    input_vector = eval(config['sampleInput'])
+    input_vector = config['sampleInput']
     
     ingredients_transformed = mlb.transform(test)
     recipe_test_trans = mlb.transform(input_vector)

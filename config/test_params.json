@@ -8,5 +8,6 @@
     "final": "data/modified_set/final_data.csv",
     "combined": "data/modified_set/combined.csv",
     "testSet": "testData/listfile.data",
-    "sampleInput": "[['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]"
+    "size": 10,
+    "sampleInput": [['sugar', 'unsalted butter', 'bananas', 'eggs','fresh lemon juice']]
 }
