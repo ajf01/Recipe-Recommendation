@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 import os
-import pprint
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -26,7 +25,7 @@ def main(configs):
         sims.append(sim)
 
     recipes['sim'] = [x[0][0] for x in sims]
-    pprint.pprint(recipes.set_index('name')[:5])
+    print(recipes.set_index('name')[:5])
     return 
     
 if __name__ == '__main__':
