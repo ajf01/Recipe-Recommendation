@@ -15,7 +15,7 @@ def main(targets):
         with open(filepath) as file:
             configs = json.load(file)
 
-        etl.main(configs)
+        #etl.main(configs)
         #rmse.main(configs)
         
         print("####################")
