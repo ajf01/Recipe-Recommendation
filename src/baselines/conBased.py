@@ -14,7 +14,7 @@ def main(configs):
     mlb = MultiLabelBinarizer()
     mlb.fit(test)
     
-    input_vector = eval(config['sampleInput'])
+    input_vector = eval(configs['sampleInput'])
     
     ingredients_transformed = mlb.transform(test)
     recipe_test_trans = mlb.transform(input_vector)
