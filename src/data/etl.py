@@ -33,7 +33,8 @@ def main(configs):
     combined = pd.merge(raw_r,raw_i,how='inner',left_on='id',right_on='recipe_id')
     combined.to_csv(out_folder+'/combined.csv',index=False)
     
-    final_r = raw_r.astype({'id': 'object','contributor_id': 'object'}).rename(columns{'id':'recipe_id'}).set_index('recipe_id')
+    final_r = raw_r.astype({'id': 'object','contributor_id': 'object'})
+    final_r = final_r.rename(columns={'id':'recipe_id'}).set_index('recipe_id')
     final_i = raw_i[['rating','recipe_id']].groupby('recipe_id')['rating'].agg(['mean','count'])
     final_i = final_i.rename(columns = {'mean':'mean_rating','count':'review_count'})
     final_data = final_r.merge(final_i, on = 'recipe_id')
